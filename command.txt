@@ -41,3 +41,25 @@ REMOTE_IP4 = '192.168.101.134'
 #REMOTE_IP4 = '192.168.0.160'
 REMOTE_PORT4 = 8080
 PORTA_DESTINO_DVR4 = 8134
+
+
+[hevc @ 000001f25ff2ff80] Could not find ref with POC 22
+[hevc @ 000001f25ff2ff80] Error constructing the frame RPS.
+[hevc @ 000001f25ff2ff80] Skipping invalid undecodable NALU: 1
+[hevc @ 000001f25ff42680] Could not find ref with POC 24
+[hevc @ 000001f25ff42680] Error constructing the frame RPS.
+[hevc @ 000001f25ff42680] Skipping invalid undecodable NALU: 1
+[hevc @ 000001f25ff4e780] Could not find ref with POC 24
+[hevc @ 000001f25ff4e780] Error constructing the frame RPS.
+[hevc @ 000001f25ff4e780] Skipping invalid undecodable NALU: 1
+[hevc @ 000001f260172dc0] Could not find ref with POC 26
+[hevc @ 000001f260172dc0] Error constructing the frame RPS.
+[hevc @ 000001f260172dc0] Skipping invalid undecodable NALU: 1
+[hevc @ 000001f25e09dc00] Could not find ref with POC 26
+[hevc @ 000001f25e09dc00] Error constructing the frame RPS.
+[hevc @ 000001f25e09dc00] Skipping invalid undecodable NALU: 1
+[hevc @ 000001f25ff2ff80] Could not find ref with POC 28
+[hevc @ 000001f25ff2ff80] Error constructing the frame RPS.
+[hevc @ 000001f25ff2ff80] Skipping invalid undecodable NALU: 1
+[hls @ 000001f25e06aa00] Opening 'C:\v\output48.ts' for writingA dup=12292 drop=7 speed=0.154x
+[hls @ 000001f25e06aa00] Opening 'C:\v\output.m3u8.tmp' for writing
