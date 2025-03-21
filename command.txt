@@ -1,0 +1,39 @@
+rtsp://progrmadorl04:v3r0nal004@192.168.101.250:554/cam/realmonitor?channel=1&subtype=0
+rtsp://progrmadorl04:v3r0nal004@192.168.101.250:554/cam/realmonitor?channel=2&subtype=0
+rtsp://progrmadorl04:v3r0nal004@192.168.101.250:554/cam/realmonitor?channel=3&subtype=0
+rtsp://progrmadorl04:v3r0nal004@192.168.101.250:554/cam/realmonitor?channel=4&subtype=0
+
+rtsp://127.0.0.1:8554/stream
+
+ffmpeg -i "rtsp://progrmadorl04:v3r0nal004@192.168.101.250:554/cam/realmonitor?channel=1&subtype=0" -c:v libx264 -preset ultrafast -tune zerolatency -c:a aac -b:a 128k -f hls -hls_time 2 -hls_list_size 3 -hls_flags delete_segments "D:\proj\video_stream_output\out.put.m3u8"
+
+s/ áudio 
+ffmpeg -i "rtsp://progrmadorl04:v3r0nal004@192.168.101.250:554/cam/realmonitor?channel=1&subtype=0" -c:v libx264 -preset ultrafast -tune zerolatency -an -f hls -hls_time 2 -hls_list_size 3 -hls_flags delete_segments "D:\proj\video_stream_output\out.put.m3u8"
+
+
+# Configurações de rede
+IP_DVR = '192.168.101.250'
+PORTA_ENV_DVR = 38800
+
+LOCAL_IP = '0.0.0.0'
+LOCAL_PORT = 38800
+
+REMOTE_IP1 = '192.168.101.131'
+# REMOTE_IP1 = '192.168.101.131'
+REMOTE_PORT1 = 8080
+PORTA_DESTINO_DVR1 = 8131
+
+REMOTE_IP2 = '192.168.101.132'
+# REMOTE_IP2 = '192.168.101.132'
+REMOTE_PORT2 = 8080
+PORTA_DESTINO_DVR2 = 8132
+
+REMOTE_IP3 = '192.168.101.133'
+# REMOTE_IP3 = '192.168.101.159'
+REMOTE_PORT3 = 8080
+PORTA_DESTINO_DVR3 = 8133
+
+REMOTE_IP4 = '192.168.101.134'
+#REMOTE_IP4 = '192.168.0.160'
+REMOTE_PORT4 = 8080
+PORTA_DESTINO_DVR4 = 8134
